@@ -1,52 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Trivia Game</title>
 
     <!--links-->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="script" href="javascript/main.js">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="script" href="javascript/main.js" />
   </head>
 
-  <body>
+  <!--Spidey Logo-->
 
-    <!--title-->
-   
+  <body>
+      <div class="headerImage">
+    <img src="https://cdn.freebiesupply.com/logos/large/2x/spider-man-logo-png-transparent.png" width="400" height="400">
+   </div>
     <div class="container">
       <div class="header-title">
-        <h1 class="text-muted">Spiderman Trivia Game</h1>
       </div>
-      
-      
+    
+
       <!--jumbotron-->
 
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-        <div id="game">
-          <h2>Spiderman Trivia Game</h2>
-          <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
-          <p id="question" class="lead"></p>
-        </div>
-        <div id="results">
-        </div>
-      </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h1 class="display-3">Spider-Man Trivia Game</h1>
+                <hr />
+              </div>
+            </div>
 
-      <!--buttondone-->
+            <div class="row">
+              <div class="col-md-3">
+                <div>
+                  <h3 id="timer"></h3>
+                </div>
+              </div>
 
-      <div class="row">
-        <div id="choices" class="text-center">
-          <button id="done" class="btn btn-danger btn-lg">Done</button>
-          <div id="options">
-            
+              <div class="offset-md-1"></div>
+
+              <div class="col-md-12">
+                <div id="start-page" class="start-page-text">
+                  <h2>Are your Spider Senses Tingling?</h2>
+                  <p>
+                    How well do you know your friendly neighborhood hero? Test your knowledge of <i>Spider-Man</i> with this multiple
+                    choice trivia game. You have 60 seconds to answer all the
+                    questions and the game ends. When the time has run out the game is over. Good luck!
+                  </p>
+                  <div class="btn btn-primary" id="start-button">Start</div>
+                </div>
+
+                <div>
+                  <div id="questions-box"></div>
+                </div>
+
+                <div class="hidden" id="end-page">
+                  <h2>Here are your scores:</h2>
+                  <p id="correct-answers"></p>
+                  <p id="incorrect-answers"></p>
+                  <p id="unanswered"></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!--Footer-->
+    
+      <footer>
+        <div class="container-fluid">
+          <hr />
+          <span class="text-center">
+            <p>&copy; Copyright 2020 Jadan Morrow</p>
+            <p id="copyright-small" class="text-muted">
+              Images featuring <i>Spider-Man</i> are the property of MARVEL.
+            </p></span>
+      </footer>
+
+      <!--Script-->
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+
+    </div>
   </body>
 </html>
