@@ -133,7 +133,7 @@ var questionBank = [
   },
 
   {
-    question: 'Who is Peters Uncle?',
+    question: "Who is Peter's Uncle?",
     answers: ['Richard', 'Sam', 'Ben'],
     correct: 'Ben'
   },
@@ -163,7 +163,7 @@ var questionBank = [
   },
 
   {
-    question: 'Who was Peters first superhuman girlfriend?',
+    question: "Who was Peter's first superhuman girlfriend?",
     answers: ['Mary Jane', 'Black Cat', 'Cat Woman'],
     correct: 'Black Cat'
   }
